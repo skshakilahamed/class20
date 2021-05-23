@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main-div{
+    height: 600px;
+    width: 600px;
+    border: black 2px solid;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.div1{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+.div2 {
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: 208px;
+}
+.div3{
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.maindiv{
+    width: 600px;
+    padding: 20px;
+    margin: 30px auto;
+    border: solid 1px black;
+    text-align: center;
+    
+
+
+}
+.hoverdiv{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.hoverdiv img{
+    max-width: 100%;
+}
+.hoverinner h2{
+    margin-top: 60px;
+}
+.hoverinner{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 0%;
+    width: 0%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(43, 201, 28, 0.541);
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+.hoverdiv:hover .hoverinner{
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
